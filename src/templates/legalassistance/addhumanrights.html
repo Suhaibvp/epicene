@@ -1,0 +1,36 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
+<!--<title>Untitled Document</title>-->
+<!--</head>-->
+{% extends 'legalindex.html' %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="insertaddhuman">
+  <table width="200" border="1">
+    <tr>
+      <th scope="row">Type of Human rights </th>
+      <td><label>
+        <select name="select">
+          <option>aaa</option>
+          <option>bbb</option>
+                </select>
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">Description</th>
+      <td><textarea rows="" cols="" name="desc" required></textarea></td>
+    </tr>
+    <tr>
+      <th colspan="2" scope="row"><label>
+        <input type="submit" name="Submit" value="Add" />
+      </label></th>
+    </tr>
+  </table>
+
+  <label></label>
+</form>
+</body>
+<!--</html>-->
+{% endblock %}

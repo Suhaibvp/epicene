@@ -1,0 +1,42 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
+<!--<title>Untitled Document</title>-->
+<!--</head>-->
+{% extends 'index1.html' %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="logincode">
+  <table width="200" border="0" >
+    <tr>
+      <th scope="col">&nbsp;</th>
+      <th scope="col">USERNAME</th>
+      <th scope="col"><label>
+        <input type="text" name="textfield" required />
+      </label></th>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>PASSWORD</td>
+      <td><label>
+        <input name="textfield2" type="password" required />
+      </label></td>
+    </tr>
+    <tr>
+      <td colspan="3"><div align="center">
+        <input type="submit" name="Submit" value="LOGIN" class="btn "/>
+      </div></td>
+    </tr>
+    <tr>
+      <td colspan="3"><label>
+        <!--<div align="center"><a href="userreg">signup for localcoordinator</a>-->
+          
+          </div>
+      </label></td>
+    </tr>
+  </table>
+</form>
+</body>
+{% endblock %}
+<!--</html>-->

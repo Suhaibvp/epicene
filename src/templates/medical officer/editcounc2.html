@@ -1,0 +1,54 @@
+{% extends 'medindex.html' %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="/updatecoun1">
+  <table width="200" border="1">
+    <tr>
+      <td><p>Counselling</p>
+        <p>progam</p></td>
+      <td><label>
+        <input type="text" name="textfield" value="{{val[2]}}" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>Description</td><td>
+
+
+        <textarea name="textarea">{{val[3]}}</textarea>
+      </label></td>
+    </tr>
+    <tr>
+      <td>Place</td>
+      <td><label>
+        <input type="text" name="textfield2"  value="{{val[4]}}"/>
+      </label></td>
+    </tr>
+    <tr>
+      <td>Date</td>
+      <td><label>
+        <input type="text" name="textfield3"  value="{{val[5]}}"/>
+      </label></td>
+    </tr>
+    <tr>
+      <td>Ttime</td>
+      <td><label>
+        <input type="text" name="textfield4" value="{{val[6]}}" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>Contact no </td>
+      <td><label>
+        <input type="text" name="textfield5"  value="{{val[7]}}"/>
+      </label></td>
+    </tr>
+    <tr>
+      <td colspan="2"><label> 
+        <div align="center">
+          <input name="Add" type="submit" id="Add" value="Add" />
+          </div>
+      </label></td>
+    </tr>
+  </table>
+</form>
+</body>
+{% endblock %}

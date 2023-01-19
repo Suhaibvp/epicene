@@ -1,0 +1,44 @@
+{% extends 'locallindex.html' %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="updateaware">
+  <table width="200" border="1">
+    <tr>
+      <th scope="row">Program name </th>
+      <td><label>
+        <input type="text" name="textfield" required pattern="[A-Z a-z.]{3,25}" value="{{val[2]}}" />
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">Descrition</th>
+      <td><label>
+        <textarea name="textarea" required>{{val[3]}}</textarea>
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">Date</th>
+      <td><label>
+        <input type="date" name="textfield2" min="1990-01-01" max="2019-12-31" required value="{{val[4]}}" />
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">Time</th>
+      <td><label>
+        <input type="time" name="textfield3" required value="{{val[5]}}" />
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">Venue</th>
+      <td><label>
+        <input type="text" name="textfield4" required value="{{val[6]}}" />
+      </label></td>
+    </tr>
+    <tr>
+      <th colspan="2" scope="row"><label>
+        <input name="ADD" type="submit" id="ADD" value="Add" />
+      </label></th>
+    </tr>
+  </table>
+</form>
+</body>
+{% endblock %}

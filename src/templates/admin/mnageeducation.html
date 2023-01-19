@@ -1,0 +1,41 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
+<!--<title>Untitled Document</title>-->
+<!--</head>-->
+{% extends 'adminindex.html' %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="/addedu#about">
+  <table width="403" border="1">
+    <tr>
+      <th width="101" scope="col">Institute name </th>
+      <th width="36" scope="col">Place</th>
+      <th width="29" scope="col">Post</th>
+      <th width="77" scope="col">Contact no </th>
+      <th width="61" scope="col">&nbsp;</th>
+      <th width="59" scope="col">&nbsp;</th>
+    </tr>
+    {% for i in val %}
+    <tr>
+      <td>{{i[1]}}</td>
+      <td>{{i[2]}}</td>
+      <td>&nbsp;{{i[3]}}</td>
+      <td>&nbsp;{{i[5]}}</td>
+      <td><a href="editedu?id={{i[0]}}">edit</a></td>
+      <td><a href="delmanedu1?id={{i[0]}}">delete</a></td>
+    </tr>
+    {% endfor %}
+    <tr>
+      <td colspan="2"><label>
+        <div align="center">
+          <input type="submit" name="Submit" value="ADD" />
+          </div>
+      </label></td>
+    </tr>
+  </table>
+</form>
+</body>
+{% endblock %}
+<!--</html>-->
